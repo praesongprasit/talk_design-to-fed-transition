@@ -7,6 +7,6 @@ This talk was prepared for:
 
 ## License
 
-Content of this presentation is using GNU GPL3.
+Content of this presentation is GNU GPL3 licensed.
 
 [Reveal.js](https://github.com/hakimel/reveal.js) used for this presentation is MIT licensed, and Copyright (C) 2018 Hakim El Hattab, http://hakim.se
