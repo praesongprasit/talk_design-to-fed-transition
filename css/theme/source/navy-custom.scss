@@ -16,7 +16,7 @@
 
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #191919;
+$backgroundColor: #181E2B;
 
 $mainColor: #fff;
 $headingColor: #fff;
@@ -28,7 +28,7 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
-$linkColor: #42affa;
+$linkColor: #8DFCE4;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -47,3 +47,9 @@ section.has-light-background {
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal {
+	h1, h2, h3 {
+		text-transform: none;
+	}
+}
