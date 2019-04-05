@@ -274,3 +274,10 @@ body {
 
 .reveal h1, .reveal h2, .reveal h3 {
   text-transform: none; }
+
+.reveal h1 {
+  color: #8DFCE4; }
+
+.reveal bold {
+  font-weight: 600;
+  color: #8DFCE4; }

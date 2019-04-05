@@ -26,15 +26,34 @@
 			<div class="slides">
 				<section>
 					<h1>UI/UX to Front End</h1>
-					<p>The natural transition... What to expect?</p>
+					<p>What to expect?</p>
 
 					<aside class="notes">
-						<p>Feelers</p>	
+						<p>Prae, been a UI Front End Developer for 6 years. </p>
+						<p>I specialise in CSS and HTML for large scale sites, with thousands of pages, like Tourism New Zealand, and Xero's Help portal called Xero Central.</p>
+						<p>For this session, we're going to have a little chat, about what to expect, when transitioning from UI/UX Design, to Front End Development.</p>
+						<p>To keep things concise, I'm going to refer to UI/UX design as simply 'design'. Politically incorrect, but bear with me. And Front End Developer 'FED'.</p>
 						<ol>
 							<li>Who's considering?</li>
 							<li>Who did the transition?</li>
-							<li>Who's just here to check things out?</li>
+							<li>So the rest are just here to check things out?</li>
 						</ol>
+					</aside>
+				</section>
+
+				<section>
+					<h2>It's a <bold>well-trodden path</bold></h2>
+					
+					<p class="fragment" data-fragment-index="1">Especially for non-STEM backgrounds</p>
+
+					<aside class="notes">
+						<p>To start with, designers like to create pretty things that help others.</p>
+						<p>Design can solve problems, but nothing unless it turns into something tangible</p>
+						<p>Need to make things real.</p>
+						<p>HTML/CSS is the basics, one of the first to be taught in web dev. Makes it an great entry point for non-STEM people</p>
+						<p>I know this to be true, as I only have a business degree, and an admiration for design.</p>
+						<p>I spent 1 year on a web design diploma, and came out wondering if I liked design or FED better.</p>
+						<p>I wanted to be the one who make things real and consistent.</p>
 					</aside>
 				</section>
 
@@ -59,24 +78,123 @@
 
 				<section>
 					<h2>Browsing/references</h2>
+				</section>
+
+				<section data-transition="slide-in fade-out">
+					<h3>Design porn of choice</h3>
+					<p><a href="https://dribble.com">Dribble</a></p>
+					<img class="stretch" src="img/dribble.png" alt="dribble.com screenshot" />
+				</section>
+
+				<section data-transition="fade-in slide-out">
+					<h3>FED porn of choice</h3>
+					<p><a href="https://codepen.io">CodePen</a></p>
+					<img class="stretch" src="img/codepen.png" alt="codepen.io screenshot" />
+				</section>
+
+				<section data-transition="slide-in fade-out">
+					<h3>Latest Design trends</h3>
+					<p><a href="https://uxdesign.cc">UX Collective (medium)</a></p>
+					<img class="stretch" src="img/uxcollective.png" alt="UX collective on Medium" />
+				</section>
+
+				<section data-transition="fade-in slide-out">
+					<h3>Latest FED trends</h3>
+					<p><a href="https://css-tricks.com">CSS Tricks</a></p>
+					<img class="stretch" src="img/csstricks.png" alt="css-tricks.com screenshot" />
+				</section>
+
+				<section>
+					<h3>Shared knowledge</h3>
+					<p><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></p>
+					<img class="stretch" src="img/smashingmagazine.png" alt="smashingmagazine.com screenshot" />
+				</section>
+
+				<section>
+					<h2>Upon seeing a design</h2>
+
+				</section>
+
+				<section>
+					<h2>Things that keep me <br>awake at night</h2>
+				</section>
+
+				<section>
+					<h3>1. Poor HTML markup</h3>
+					<img class="stretch" src="img/fed-on-vacation.jpg" alt="When the front-end dev is on vacation, by CommitStrip http://www.commitstrip.com/en/2014/12/12/when-the-front-end-dev-is-on-vacation/" />
+
 					<aside class="notes">
-						<p>Design</p>
+						<p>FED, is converting visual design, into something that human can use, and machine can read.</p>
+						<p>SEO, is making your site readable to Google. That's HTML markup and content structure</p>
+					</aside>
+				</section>
+
+				<section data-transition="slide-in fade-out">
+					<h3>2. Specificity</h3>
+					<img class="stretch" src="img/specificity.jpg"
+						alt="Nothing is more important than the cascade, by CommitStrip http://www.commitstrip.com/en/2015/02/26/nothing-is-more-important-than-the-cascade/" />
+				</section>
+
+				<section data-transition="fade-in slide-out">
+					<h3>2. Specificity</h3>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Bottom trumps top</li>
+						<li class="fragment" data-fragment-index="2">
+							Specificity points
+							<pre><code data-trim data-noescape>
+// Type selector = 1 point
+h1 :before
+
+// Class selector = 10 points
+.class :hover
+
+// ID selector = 100 points
+#h1
+
+// Inline style = 1000 points
+&lt;h1 style="color: red;"&gt;</code></pre>
+						</li>
+						<li class="fragment" data-fragment-index="3">!important trumps [style]</li>
+					</ul>
+					<p class="fragment" data-fragment-index="4"><small><a href="https://www.w3schools.com/css/css_specificity.asp">See W3C for more info</a></small></p>
+
+					<aside class="notes">
 						<ol>
-							<li>Porn of choice: Dribble</li>
-							<li>UX Collective (medium)</li>
-							<li>InVision blog</li>
-							<li>Smashing magazine design category</li>
-						</ol>
-						
-						<p>FED</p>
-						<ol>
-							<li>Porn of choice: CodePen</li>
-							<li>CSS Tricks</li>
-							<li>W3C School</li>
-							<li>CanIUse</li>
-							<li>Smashing magazine</li>
+							<li>CSS stands for Cascading Style Sheets</li>
+							<li>Read from top to bottom, bottom one trumps</li>
+							<li>Each style attributes has # points attached</li>
+							<li>Elements and pseudo-elements - This category includes element names and pseudo-elements, such as h1, div, :before and :after.</li>
+							<li>Classes, attributes and pseudo-classes - This category includes .classes, [attributes] and pseudo-classes such as :hover, :focus etc.</li>
+							<li>IDs - An ID is a unique identifier for the page elements, such as #navbar.</li>
+							<li>Inline styles - An inline style is attached directly to the element to be styled</li>
 						</ol>
 					</aside>
+				</section>
+
+				<section data-transition="slide-in fade-out">
+					<h3>3. Responsiveness</h3>
+					<p>To float...</p>
+					<img src="img/responsive-float.gif" alt="CSS-Tricks exampe of float layout">
+					<p><small><a href="https://css-tricks.com/media-object-bunch-ways/">Media object</a> by CSS-Tricks </small></p>
+				</section>
+				
+				<section data-transition="fade-in slide-out">
+					<h3>3. Responsiveness</h3>
+					<p>Or not to float... and suffer the consequence</p>
+					<img src="img/responsive-flex.gif" alt="CSS-Tricks exampe of flex layout">
+					<p><small><a href="https://css-tricks.com/media-object-bunch-ways/">Media object</a> by CSS-Tricks </small></p>
+				</section>
+
+				<section>
+					<h3>4. Browser support</h3>
+					<p><a href="https://caniuse.com/">CanIUse</a> is your new best friend</p>
+					<img class="stretch" src="img/browser-support.jpg" alt="Div that looks different in every browser, by Martijn Cuppens https://codepen.io/MartijnCuppens/pen/MXojmw">
+				</section>
+
+				<section>
+					<h3>5. Accessibility</h3>
+					<p>Watch out for that colour contrast... And your markup</p>
+					<img class="stretch" src="img/color-review.png" alt="color.review screenshot">
 				</section>
 
 				<section>
@@ -85,15 +203,100 @@
 				</section>
 
 				<section>
-					<h2>The great divide</h2>
+					<h3>Rosy prospects...?</h3>
+					<img class="stretch" src="img/design-jobs.png" alt="Seek for UI/UX design jobs" />
+					<img class="stretch" src="img/fed-jobs.png" alt="Seek for Front End Devloper jobs" />
 				</section>
 
 				<section>
+					<h3><a hred="https://css-tricks.com/the-great-divide/">The Great Divide article</a></h3>
+					<p>by Chris Colyier</p>
+					<img class="stretch" src="img/the-great-divide.png" alt="Screenshot of the Great Divide article on CSS Tricks">
+				</section>
+
+				<section>
+					<h3><a hred="https://css-tricks.com/the-great-divide/">The Great Divide article</a></h3>
+					<p>by Chris Colyier</p>
+					<img class="stretch" src="img/the-great-divide-sides.png" alt="Part of the Great Divide article on CSS Tricks">
+				</section>
+
+				<section>
+					<h3>Watch out for those full-stack roles</h3>
 					<img class="stretch" src="img/full-stack-fallacy.jpg" />
 
 					<aside class="notes">
-
+						<ul>
+							<li>Don't believe in the almighty title of full-stack developers.</li>
+							<li>It's like hiring a handyman. Jack of all trades-master of none. Usally, these are inturns</li>
+							<li>Really read the job description. It requires you to do everything, but be particularly good at...?</li>
+						</ul>
 					</aside>
+				</section>
+
+				<section>
+					<h2>Who should you be door knocking?</h2>
+					<p>What kind of workplaces would suit your career?</p>
+				</section>
+
+				<section>
+					<h3>Design/digital agencies</h3>
+					<ul>
+						<li>Usually a small multidisciplinary team</li>
+						<li></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Weapons from design days</h2>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Ability to <bold>communicate in visual and technical language</bold></li>
+						<li class="fragment" data-fragment-index="2">Amazing <bold>eye for design detail</bold>, and how it flows on the web</li>
+						<li class="fragment" data-fragment-index="3">Your design <bold>empathy</bold> for the users</li>
+					</ul>
+
+					<aside class="notes">
+						<ul>
+							<li>HTML and CSS</li>
+							<li>Bridging gap between design and BED.</li>
+							<li>Helps you understand the responsive flow well</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Get more ammunition</h2>
+					<p>Arm yourself better as a UI Front End Dev</p>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Deep dive into <bold>pure HTML and CSS</bold></li>
+						<li class="fragment" data-fragment-index="2">Know your <bold>vanilla JavaScript</bold></li>
+						<li class="fragment" data-fragment-index="3">Play around with a <bold>JavaScript framework</bold> (React, Angular, or Vue)</li>
+						<li class="fragment" data-fragment-index="4">Learn <bold>Git(Hub)</bold></li>
+						<li class="fragment" data-fragment-index="5">Read up and make <bold>Accessibility</bold> a part of your mantra/code</li>
+						<li class="fragment" data-fragment-index="6">Never forget that <bold>great UX is largely in your capable hands</bold></li>
+					</ul>
+
+					<aside class="notes">
+						<ul>
+							<li>You may one day forget your users, busy solving technical challenges and delivering</li>
+							<li>Ask for your dev peers to be close to users. Ask to sit in those user testing sessions</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>What if it's not for you after all?</h2>
+					<p class="fragment" data-fragment-index="1">You'll become a better, more aware designer</p>
+					<img class="fragment" data-fragment-index="1" src="" alt="">
+				</section>
+
+				<section>
+					<h2>What's there to lose?</h2>
+					<p class="fragment" data-fragment-index="1">Go venture on that well-trodden path to Front End Development</p>
+				</section>
+
+				<section>
+					<h2>Thanks!</h2>
+					<p>Questions?</p>
 				</section>
 			</div>
 		</div>

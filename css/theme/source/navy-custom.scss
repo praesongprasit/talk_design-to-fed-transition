@@ -52,4 +52,13 @@ section.has-light-background {
 	h1, h2, h3 {
 		text-transform: none;
 	}
+
+	h1 {
+		color: $linkColor;
+	}
+
+	bold {
+		font-weight: 600;
+		color: $linkColor;
+	}
 }
