@@ -5,6 +5,13 @@ Many have done it. In fact, it's a great thing for the industry. But what's invo
 This talk was prepared for:
 - [Wellington Code Camp 2019](https://www.codecampwellington.nz/) - 6th April
 
+## Viewing
+
+The slides can be viewed on:
+https://lackofcolours.github.io/talk_design-to-fed-transition/
+
+To view slide notes, open the slide and press the `s` key.
+
 ## License
 
 Content of this presentation is GNU GPL3 licensed.
