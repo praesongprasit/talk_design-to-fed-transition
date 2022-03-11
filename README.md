@@ -8,7 +8,7 @@ This 45mins talk was prepared for:
 ## Viewing
 
 The slides can be viewed on:
-https://lackofcolours.github.io/talk_design-to-fed-transition/
+https://praesongprasit.github.io/talk_design-to-fed-transition/
 
 To view slide notes, open the slide and press the `s` key.
 
